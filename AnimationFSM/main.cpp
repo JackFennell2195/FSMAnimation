@@ -48,15 +48,31 @@ int main()
 			case sf::Event::KeyPressed:
 				if (sf::Keyboard::isKeyPressed(sf::Keyboard::Left))
 				{
-					input.setCurrent(Input::Action::LEFT);
+					input.setCurrent(Input::Action::WALK);
 				}
 				else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Right))
 				{
-					input.setCurrent(Input::Action::RIGHT);
+					input.setCurrent(Input::Action::WALK);
 				}
 				else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Up))
 				{
-					input.setCurrent(Input::Action::UP);
+					input.setCurrent(Input::Action::JUMP);
+				}
+				else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Down))
+				{
+					input.setCurrent(Input::Action::SHOVEL);
+				}
+				else if (sf::Keyboard::isKeyPressed(sf::Keyboard::S))
+				{
+					input.setCurrent(Input::Action::SWORD);
+				}
+				else if (sf::Keyboard::isKeyPressed(sf::Keyboard::C))
+				{
+					input.setCurrent(Input::Action::CLIMB);
+				}
+				else if (sf::Keyboard::isKeyPressed(sf::Keyboard::H))
+				{
+					input.setCurrent(Input::Action::HAMMER);
 				}
 				break;
 			default:

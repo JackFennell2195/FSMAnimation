@@ -34,17 +34,29 @@ void Player::handleInput(Input in)
 		//std::cout << "Player Idling" << std::endl;
 		m_animation.idle();
 		break;
-	case Input::Action::UP:
+	case Input::Action::CLIMB:
 		//std::cout << "Player Up" << std::endl;
 		m_animation.climbing();
 		break;
-	case Input::Action::LEFT:
+	case Input::Action::JUMP:
 		//std::cout << "Player Left" << std::endl;
 		m_animation.jumping();
 		break;
-	case Input::Action::RIGHT:
+	case Input::Action::WALK:
 		//std::cout << "Player Idling" << std::endl;
-		m_animation.jumping();
+		m_animation.walking();
+		break;
+	case Input::Action::HAMMER:
+		//std::cout << "Player Idling" << std::endl;
+		m_animation.hammering();
+		break;
+	case Input::Action::SHOVEL:
+		//std::cout << "Player Idling" << std::endl;
+		m_animation.shovelling();
+		break;
+	case Input::Action::SWORD:
+		//std::cout << "Player Idling" << std::endl;
+		m_animation.swordmanship();
 		break;
 	default:
 		break;
