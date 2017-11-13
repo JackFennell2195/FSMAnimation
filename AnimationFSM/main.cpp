@@ -62,7 +62,8 @@ int main()
 				{
 					input.setCurrent(Input::Action::SHOVEL);
 				}
-				else if (sf::Keyboard::isKeyPressed(sf::Keyboard::S))
+			case sf::Event::TextEntered:
+				if (sf::Keyboard::isKeyPressed(sf::Keyboard::S))
 				{
 					input.setCurrent(Input::Action::SWORD);
 				}
