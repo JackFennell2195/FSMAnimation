@@ -1,17 +1,17 @@
-#ifndef CLIMBING_H
-#define CLIMBING_H
+#ifndef SWORDMANSHIP_H
+#define SWORDMANSHIP_H
 
 #include <State.h>
 
-class Climbing : public State
+class Swordmanship : public State
 {
 public:
-	Climbing() {};
-	~Climbing() {};
+	Swordmanship() {};
+	~Swordmanship() {};
 	void idle(Animation* a);
 	void jumping(Animation* a);
+	void climbing(Animation* a);
 	void walking(Animation *a);
-	void swordmanship(Animation *a);
 	void shovelling(Animation *a);
 	void hammering(Animation *a);
 };
