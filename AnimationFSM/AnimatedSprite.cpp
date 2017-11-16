@@ -48,20 +48,33 @@ void AnimatedSprite::update(){
 		addFrame(sf::IntRect(173, 3, 84, 84));
 		m_frames.resize(3);
 		break;
+
 	case 1:
+		addFrame(sf::IntRect(258, 3, 84, 84));
+		addFrame(sf::IntRect(343, 3, 84, 84));
+		addFrame(sf::IntRect(428, 3, 84, 84));
+		addFrame(sf::IntRect(3, 88, 84, 84));
+		m_frames.resize(4);
 		break;
+
 	case 2:
+		addFrame(sf::IntRect(88, 88, 84, 84));
+		addFrame(sf::IntRect(173, 88, 84, 84));
+		addFrame(sf::IntRect(258, 88, 84, 84));
+		addFrame(sf::IntRect(343, 88, 84, 84));
+		m_frames.resize(4);
 		break;
-	case 3:
-		break;
-	case 4:
-		break;
-	case 5:
-		break;
-	case 6:
-		break;
+	//case 3:
+	//	break;
+	//case 4:
+	//	break;
+	//case 5:
+	//	break;
+	//case 6:
+	//	break;
 		
 	}
+
 	if (m_clock.getElapsedTime() > m_time) {
 		if (m_frames.size() > m_current_frame + 1)
 		{

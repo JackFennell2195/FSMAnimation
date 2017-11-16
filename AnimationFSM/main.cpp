@@ -21,11 +21,6 @@ int main()
 
 	// Setup Players Default Animated Sprite
 	AnimatedSprite animated_sprite(texture);
-	
-	/*animated_sprite.addFrame(sf::IntRect(3, 3, 84, 84));
-	animated_sprite.addFrame(sf::IntRect(88, 3, 84, 84));
-	animated_sprite.addFrame(sf::IntRect(173, 3, 84, 84));*/
-
 	/*animated_sprite.addFrame(sf::IntRect(258, 3, 84, 84));
 	animated_sprite.addFrame(sf::IntRect(343, 3, 84, 84));*/
 
@@ -50,10 +45,12 @@ int main()
 				if (sf::Keyboard::isKeyPressed(sf::Keyboard::Left))
 				{
 					input.setCurrent(Input::Action::WALK);
+					animated_sprite.setType(1);
 				}
 				else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Right))
 				{
 					input.setCurrent(Input::Action::WALK);
+					animated_sprite.setType(2);
 				}
 				else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Up))
 				{
