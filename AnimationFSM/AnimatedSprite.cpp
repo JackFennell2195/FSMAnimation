@@ -38,6 +38,18 @@ const int AnimatedSprite::getCurrentFrame() {
 }
 
 void AnimatedSprite::update(){
+	m_frames.clear();
+	switch (animation)
+	{
+	default:
+	case 0:
+		addFrame(sf::IntRect(3, 3, 84, 84));
+		addFrame(sf::IntRect(88, 3, 84, 84));
+		addFrame(sf::IntRect(173, 3, 84, 84));
+		m_frames.resize(3);
+		break;
+		
+	}
 	if (m_clock.getElapsedTime() > m_time) {
 		if (m_frames.size() > m_current_frame + 1)
 		{
@@ -48,5 +60,10 @@ void AnimatedSprite::update(){
 		}
 		m_clock.restart();
 	}
+}
+
+void AnimatedSprite::setType(int action)
+{
+	animation = action;
 }
 

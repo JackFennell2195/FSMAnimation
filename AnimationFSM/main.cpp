@@ -11,7 +11,7 @@ int main()
 {
 	// Create the main window
 	sf::RenderWindow window(sf::VideoMode(800, 600), "SFML window");
-
+	
 	// Load a sprite to display
 	sf::Texture texture;
 	if (!texture.loadFromFile("assets\\grid.png")) {
@@ -22,13 +22,13 @@ int main()
 	// Setup Players Default Animated Sprite
 	AnimatedSprite animated_sprite(texture);
 	
-	for (int xCor = 0; xCor < 6; xCor++)
-	{
-		for (int yCor = 0; yCor < 6; yCor++)
-		{
-			animated_sprite.addFrame(sf::IntRect((yCor * 85 + 3),(xCor * 85 + 3), 84, 84));
-		}
-	}
+	/*animated_sprite.addFrame(sf::IntRect(3, 3, 84, 84));
+	animated_sprite.addFrame(sf::IntRect(88, 3, 84, 84));
+	animated_sprite.addFrame(sf::IntRect(173, 3, 84, 84));*/
+
+	/*animated_sprite.addFrame(sf::IntRect(258, 3, 84, 84));
+	animated_sprite.addFrame(sf::IntRect(343, 3, 84, 84));*/
+
 	// Setup the Player
 	Player player(animated_sprite);
 	Input input;
@@ -50,7 +50,6 @@ int main()
 				if (sf::Keyboard::isKeyPressed(sf::Keyboard::Left))
 				{
 					input.setCurrent(Input::Action::WALK);
-					
 				}
 				else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Right))
 				{
@@ -80,6 +79,7 @@ int main()
 				break;
 			default:
 				input.setCurrent(Input::Action::IDLE);
+				animated_sprite.setType(0);
 				break;
 			}
 		}
