@@ -10,7 +10,7 @@ public:
 	{
 		IDLE,
 		JUMP,
-		CLIMB,
+		ROAR,
 		SWORD,
 		HAMMER,
 		SHOVEL,

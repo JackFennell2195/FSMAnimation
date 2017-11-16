@@ -1,13 +1,13 @@
-#ifndef CLIMBING_H
-#define CLIMBING_H
+#ifndef ROARING_H
+#define ROARING_H
 
 #include <State.h>
 
-class Climbing : public State
+class Roaring : public State
 {
 public:
-	Climbing() {};
-	~Climbing() {};
+	Roaring() {};
+	~Roaring() {};
 	void idle(Animation* a);
 	void jumping(Animation* a);
 	void walking(Animation *a);

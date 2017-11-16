@@ -22,7 +22,7 @@ public:
 	
 	void idle();
 	void jumping();
-	void climbing();
+	void roaring();
 	void swordmanship();
 	void shovelling();
 	void walking();

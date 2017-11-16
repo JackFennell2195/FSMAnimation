@@ -38,9 +38,9 @@ void Animation::jumping()
 	m_current->jumping(this);
 }
 
-void Animation::climbing()
+void Animation::roaring()
 {
-	m_current->climbing(this);
+	m_current->roaring(this);
 }
 
 void Animation::swordmanship()

@@ -2,7 +2,7 @@
 #include "Idle.h"
 #include "Jumping.h"
 #include "Hammering.h"
-#include "Climbing.h"
+#include "Roaring.h"
 #include "Walking.h"
 #include "Swordmanship.h"
 
@@ -22,10 +22,10 @@ void Walking::jumping(Animation * a)
 	delete this;
 }
 
-void Walking::climbing(Animation * a)
+void Walking::roaring(Animation * a)
 {
 	std::cout << "Walking -> Climbing" << std::endl;
-	a->setCurrent(new Climbing());
+	a->setCurrent(new Roaring());
 	delete this;
 }
 

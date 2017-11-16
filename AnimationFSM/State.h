@@ -23,9 +23,9 @@ public:
 	{
 		DEBUG_MSG("State::Jumping");
 	}
-	virtual void climbing(Animation* a)
+	virtual void roaring(Animation* a)
 	{
-		DEBUG_MSG("State::Climbing");
+		DEBUG_MSG("State::Roaring");
 	}
 	virtual void swordmanship(Animation* a)
 	{

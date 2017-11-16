@@ -9,7 +9,7 @@ public:
 	Jumping() {};
 	~Jumping() {};
 	void idle(Animation* a);
-	void climbing(Animation* a);
+	void roaring(Animation* a);
 	void walking(Animation *a);
 	void swordmanship(Animation *a);
 	void shovelling(Animation *a);

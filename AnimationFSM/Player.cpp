@@ -34,9 +34,9 @@ void Player::handleInput(Input in)
 		//std::cout << "Player Idling" << std::endl;
 		m_animation.idle();
 		break;
-	case Input::Action::CLIMB:
+	case Input::Action::ROAR:
 		//std::cout << "Player Up" << std::endl;
-		m_animation.climbing();
+		m_animation.roaring();
 		break;
 	case Input::Action::JUMP:
 		//std::cout << "Player Left" << std::endl;
