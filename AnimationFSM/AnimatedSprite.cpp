@@ -48,6 +48,18 @@ void AnimatedSprite::update(){
 		addFrame(sf::IntRect(173, 3, 84, 84));
 		m_frames.resize(3);
 		break;
+	case 1:
+		break;
+	case 2:
+		break;
+	case 3:
+		break;
+	case 4:
+		break;
+	case 5:
+		break;
+	case 6:
+		break;
 		
 	}
 	if (m_clock.getElapsedTime() > m_time) {
