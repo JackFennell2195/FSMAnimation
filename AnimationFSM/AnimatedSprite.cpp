@@ -42,6 +42,7 @@ void AnimatedSprite::update(){
 	switch (animation)
 	{
 	default:
+		//Idle
 	case 0:
 		addFrame(sf::IntRect(3, 3, 84, 84));
 		addFrame(sf::IntRect(88, 3, 84, 84));
@@ -49,6 +50,7 @@ void AnimatedSprite::update(){
 		m_frames.resize(3);
 		break;
 
+		//Walk left
 	case 1:
 		addFrame(sf::IntRect(258, 3, 84, 84));
 		addFrame(sf::IntRect(343, 3, 84, 84));
@@ -57,6 +59,7 @@ void AnimatedSprite::update(){
 		m_frames.resize(4);
 		break;
 
+		//Walk right
 	case 2:
 		addFrame(sf::IntRect(88, 88, 84, 84));
 		addFrame(sf::IntRect(173, 88, 84, 84));
@@ -64,14 +67,72 @@ void AnimatedSprite::update(){
 		addFrame(sf::IntRect(343, 88, 84, 84));
 		m_frames.resize(4);
 		break;
-	//case 3:
-	//	break;
-	//case 4:
-	//	break;
-	//case 5:
-	//	break;
-	//case 6:
-	//	break;
+
+		//Jump
+	case 3:
+		addFrame(sf::IntRect(173, 428, 84, 84));
+		addFrame(sf::IntRect(258, 428, 84, 84));
+		addFrame(sf::IntRect(343, 428, 84, 84));
+		addFrame(sf::IntRect(428, 428, 84, 84));
+ 		m_frames.resize(4);
+		break;
+
+		//Shovel left
+	case 4:
+		addFrame(sf::IntRect(428, 173, 84, 84));
+		addFrame(sf::IntRect(3, 258, 84, 84));
+		addFrame(sf::IntRect(88, 258, 84, 84));
+		m_frames.resize(3);
+		break;
+
+		//Shovel Right
+	case 5:
+		addFrame(sf::IntRect(173, 258, 84, 84));
+		addFrame(sf::IntRect(258, 258, 84, 84));
+		addFrame(sf::IntRect(343, 258, 84, 84));
+		m_frames.resize(3);
+		break;
+
+		//Sword left
+	case 6:
+		addFrame(sf::IntRect(428, 258, 84, 84));
+		addFrame(sf::IntRect(3, 343, 84, 84));
+		addFrame(sf::IntRect(88, 343, 84, 84));
+		m_frames.resize(3);
+		break;
+
+		//Sword right
+	case 7:
+		addFrame(sf::IntRect(173, 343, 84, 84));
+		addFrame(sf::IntRect(258, 343, 84, 84));
+		addFrame(sf::IntRect(343, 343, 84, 84));
+		m_frames.resize(3);
+		break;
+
+		//Roar
+	case 8:
+		addFrame(sf::IntRect(428, 343, 84, 84));
+		addFrame(sf::IntRect(3, 428, 84, 84));
+		addFrame(sf::IntRect(88, 428, 84, 84));
+		m_frames.resize(3);
+		break;
+
+		//Hammer Left
+	case 9:
+		addFrame(sf::IntRect(428, 88, 84, 84));
+		addFrame(sf::IntRect(3, 173, 84, 84));
+		addFrame(sf::IntRect(88, 173, 84, 84));
+		m_frames.resize(3);
+		break;
+
+		//Hammer Right
+	case 10:
+		addFrame(sf::IntRect(173, 173, 84, 84));
+		addFrame(sf::IntRect(258, 173, 84, 84));
+		addFrame(sf::IntRect(343, 173, 84, 84));
+		m_frames.resize(3);
+		break;
+
 		
 	}
 
