@@ -47,7 +47,8 @@ void AnimatedSprite::update(){
 		addFrame(sf::IntRect(3, 3, 84, 84));
 		addFrame(sf::IntRect(88, 3, 84, 84));
 		addFrame(sf::IntRect(173, 3, 84, 84));
-		m_frames.resize(3);
+		addFrame(sf::IntRect(3, 3, 84, 84));
+		m_frames.resize(4);
 		break;
 
 		//Walk left
@@ -82,7 +83,8 @@ void AnimatedSprite::update(){
 		addFrame(sf::IntRect(428, 173, 84, 84));
 		addFrame(sf::IntRect(3, 258, 84, 84));
 		addFrame(sf::IntRect(88, 258, 84, 84));
-		m_frames.resize(3);
+		addFrame(sf::IntRect(3, 258, 84, 84));
+		m_frames.resize(4);
 		break;
 
 		//Shovel Right
@@ -90,7 +92,8 @@ void AnimatedSprite::update(){
 		addFrame(sf::IntRect(173, 258, 84, 84));
 		addFrame(sf::IntRect(258, 258, 84, 84));
 		addFrame(sf::IntRect(343, 258, 84, 84));
-		m_frames.resize(3);
+		addFrame(sf::IntRect(258, 258, 84, 84));
+		m_frames.resize(4);
 		break;
 
 		//Sword left
@@ -98,7 +101,8 @@ void AnimatedSprite::update(){
 		addFrame(sf::IntRect(428, 258, 84, 84));
 		addFrame(sf::IntRect(3, 343, 84, 84));
 		addFrame(sf::IntRect(88, 343, 84, 84));
-		m_frames.resize(3);
+		addFrame(sf::IntRect(3, 343, 84, 84));
+		m_frames.resize(4);
 		break;
 
 		//Sword right
@@ -106,7 +110,8 @@ void AnimatedSprite::update(){
 		addFrame(sf::IntRect(173, 343, 84, 84));
 		addFrame(sf::IntRect(258, 343, 84, 84));
 		addFrame(sf::IntRect(343, 343, 84, 84));
-		m_frames.resize(3);
+		addFrame(sf::IntRect(258, 343, 84, 84));
+		m_frames.resize(4);
 		break;
 
 		//Roar
@@ -114,7 +119,8 @@ void AnimatedSprite::update(){
 		addFrame(sf::IntRect(428, 343, 84, 84));
 		addFrame(sf::IntRect(3, 428, 84, 84));
 		addFrame(sf::IntRect(88, 428, 84, 84));
-		m_frames.resize(3);
+		addFrame(sf::IntRect(3, 428, 84, 84));
+		m_frames.resize(4);
 		break;
 
 		//Hammer Left
@@ -122,7 +128,8 @@ void AnimatedSprite::update(){
 		addFrame(sf::IntRect(428, 88, 84, 84));
 		addFrame(sf::IntRect(3, 173, 84, 84));
 		addFrame(sf::IntRect(88, 173, 84, 84));
-		m_frames.resize(3);
+		addFrame(sf::IntRect(3, 173, 84, 84));
+		m_frames.resize(4);
 		break;
 
 		//Hammer Right
@@ -130,7 +137,8 @@ void AnimatedSprite::update(){
 		addFrame(sf::IntRect(173, 173, 84, 84));
 		addFrame(sf::IntRect(258, 173, 84, 84));
 		addFrame(sf::IntRect(343, 173, 84, 84));
-		m_frames.resize(3);
+		addFrame(sf::IntRect(258, 173, 84, 84));
+		m_frames.resize(4);
 		break;
 
 		
